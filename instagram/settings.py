@@ -53,6 +53,12 @@ ROOT_URLCONF = 'instagram.urls'
 
 WSGI_APPLICATION = 'instagram.wsgi.application'
 
+CLIENT_ID = 'b1a391a91f074970bf29518a6de3101d'
+CLIENT_SECRET = 'a11f31b1983b46bda60ce6e2254db66c'
+URL = "https://api.instagram.com/oauth/access_token/"
+ACCESS_TOKEN = None
+USER_ID = None
+
 
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
@@ -82,3 +88,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
 STATIC_URL = '/static/'
+TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates')]
